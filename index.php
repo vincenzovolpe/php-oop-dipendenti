@@ -20,11 +20,11 @@
     // Stampa propietà dell'oggetto persona
     echo "Stampa dati persona generica";
     echo '<br>';
-    echo "Nome Persona: " .$persona->nome;
+    echo "Nome: " .$persona->nome;
     echo '<br>';
-    echo "Cognome Persona: " .$persona->cognome;
+    echo "Cognome: " .$persona->cognome;
     echo '<br>';
-    echo "Genere Persona: " .$persona->genere;
+    echo "Genere: " .$persona->genere;
     echo '<br>';
     try {
         echo "Retribuzione giornalinera: €" .$persona->calcolaRetribuzione();
@@ -43,6 +43,7 @@
     $dipendente = new Dipendente();
 
     // Valorizzo gli attributi dell' oggetto dipendente
+    $dipendente->matricola  = $dipendente->creaMatricola();
     $dipendente->nome  = 'Dario';
     $dipendente->cognome = 'Verdi';
     $dipendente->genere = 'Maschio';
@@ -53,14 +54,17 @@
     $dipendente->tariffaOraria = 15;
     $dipendente->tipoContratto = 'Full Time';
 
+
     // Stampa propietà dell'oggetto dipendente
     echo "Stampa dati del dipendente";
     echo '<br>';
-    echo "Nome Persona: " .$dipendente->nome;
+    echo "Matricola: " .$dipendente->matricola;
     echo '<br>';
-    echo "Cognome Persona: " .$dipendente->cognome;
+    echo "Nome: " .$dipendente->nome;
     echo '<br>';
-    echo "Genere Persona: " .$dipendente->genere;
+    echo "Cognome: " .$dipendente->cognome;
+    echo '<br>';
+    echo "Genere: " .$dipendente->genere;
     echo '<br>';
     echo "Ruolo: " .$dipendente->ruolo;
     echo '<br>';
@@ -85,6 +89,7 @@
     $responsabile = new Responsabile();
 
     // Valorizzo gli attributi dell' oggetto dipendente
+    $responsabile->matricola  = $responsabile->creaMatricola();
     $responsabile->nome  = 'Vincenzo';
     $responsabile->cognome = 'Bianchi';
     $responsabile->genere = 'Maschio';
@@ -96,14 +101,17 @@
     $responsabile->tariffaOraria = 30;
     $responsabile->tipoContratto = 'Full Time';
 
+
     // Stampa propietà dell'oggetto responsabile
-    echo "Stampa dati del responsabile";
+    echo "Stampa dati del Responsabile";
     echo '<br>';
-    echo "Nome Persona: " .$responsabile->nome;
+    echo "Matricola: " .$responsabile->matricola;
     echo '<br>';
-    echo "Cognome Persona: " .$responsabile->cognome;
+    echo "Nome: " .$responsabile->nome;
     echo '<br>';
-    echo "Genere Persona: " .$responsabile->genere;
+    echo "Cognome: " .$responsabile->cognome;
+    echo '<br>';
+    echo "Genere: " .$responsabile->genere;
     echo '<br>';
     echo "Ruolo: " .$responsabile->ruolo;
     echo '<br>';
