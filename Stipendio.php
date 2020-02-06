@@ -4,15 +4,15 @@ trait Stipendio
 {
     public $oreDiLavoro;
     public $tariffaOraria;
-    public $tipocontratto;
+    public $tipoContratto;
 
     public function calcolaRetribuzione() {
         if (!is_int($this->tariffaOraria) or !is_int($this->oreDiLavoro)) {
             throw new Exception('Hai inserito un valore non intero!');
         }
-        if ($this->$tipocontratto = "A progetto") {
+        if ($this->tipoContratto = 'A progetto') {
             return $this->tariffaOraria * $this->oreDiLavoro;
-        } elseif ($this->$tipocontratto = "Full-Time") {
+        } elseif ($this->tipoContratto = "Full-Time") {
             return $this->tariffaOraria * 8;
         } else {
             return "Nessuna retribuzione presente";

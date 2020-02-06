@@ -10,11 +10,11 @@
         public $annoDiAssunzione;
         public $dipartimento;
 
-    public function __costruct($ruolo, $tipoContratto)
-    {
-        parent::__construct($nome, $cognome, $genere);
-        $this->ruolo = $ruolo;
-        $this->tipoContratto = $tipoContratto;
+        public function __costruct($ruolo, $tipoContratto)
+        {
+            parent::__construct($nome, $cognome, $genere);
+            $this->ruolo = $ruolo;
+            $this->tipoContratto = $tipoContratto;
+        }
     }
-
 ?>

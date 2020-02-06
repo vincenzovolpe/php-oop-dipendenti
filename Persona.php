@@ -1,5 +1,8 @@
 <?php
+    include_once 'Stipendio.php';
+
     class Persona {
+        use Stipendio;
         public $nome;
         public $cognome;
         public $genere;
