@@ -1,10 +1,9 @@
 <?php
-    include_once 'Persona.php';
-    include_once 'Stipendio.php';
+    include_once 'Classi/Persona.php';
 
-    class Dipendente
+    class Dipendente extends Persona
     {
-        use Stipendio;
+
         public $matricola;
         public $ruolo;
         public $annoDiAssunzione;
@@ -13,7 +12,7 @@
         public function __costruct($matricola,  $ruolo, $tipoContratto)
         {
             parent::__construct($nome, $cognome, $genere);
-            $this->matricola = $this->creaMatricola();
+            $this->matricola = $matricola;
             $this->ruolo = $ruolo;
             $this->tipoContratto = $tipoContratto;
         }

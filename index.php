@@ -1,9 +1,9 @@
 <?php
 
-    include_once 'Persona.php';
-    include_once 'Dipendente.php';
-    include_once 'Responsabile.php';
-    include_once 'Stipendio.php';
+    include_once 'Classi/Persona.php';
+    include_once 'Classi/Dipendente.php';
+    include_once 'Classi/Responsabile.php';
+    include_once 'Traits/Stipendio.php';
 
     // Creo un istanza della classe Persona
     $persona = new Persona();
